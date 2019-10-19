@@ -26,7 +26,7 @@ describe 'Artist' do
       artist.save
       expect(Artist.all).to eq([artist])
       prince = Artist.new('Prince')
-      artist.save
+      prince.save
       expect(Artist.all).to eq([artist, prince])
     end
   end
