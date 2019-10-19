@@ -23,8 +23,10 @@ describe 'Artist' do
   describe '.all' do
     it 'returns all existing Artist instances' do
       artist = Artist.new('Michael Jackson')
+      artist.save
       expect(Artist.all).to eq([artist])
       prince = Artist.new('Prince')
+      prince.save
       expect(Artist.all).to eq([artist, prince])
     end
   end
