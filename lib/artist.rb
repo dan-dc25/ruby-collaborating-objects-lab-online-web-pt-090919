@@ -41,7 +41,7 @@ class Artist
     save
     #@@all << artist
    artist
-    
+
   end
 
 
